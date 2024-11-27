@@ -1,60 +1,81 @@
-# Role-Based Access Control System
+![image](https://github.com/user-attachments/assets/597589ed-4b7f-4aa9-b5f6-4fa9ad6e0dc4)
 
-## Setup Instructions
 
-To run this project locally, follow these steps:
 
-1. Install all dependencies:
-   ```bash
-   npm install
-   ```
-2. Start the React server:
-   ```bash
-   npm start
-   ```
-3. Open another terminal in the same root directory and start the JSON server:
-   ```bash
-   npm run server
-   ```
-4. Access the application at:
-   [http://localhost:3000/login](http://localhost:3000/login)
+# Admin Dashboard
 
----
+A modern, responsive admin dashboard built with React, featuring role-based access control, real-time analytics, and interactive data visualization.
 
-## Project Overview
+## 🚀 Features
 
-This project implements a comprehensive Role-Based Access Control (RBAC) system. It enables an administrator to efficiently manage users, roles, and their associated permissions. Each role can be assigned specific permissions that define its access to various system functionalities. The application provides full flexibility to the admin to modify roles, permissions, and user accounts.
+- **Responsive Design**: Fully responsive layout that works on desktop, tablet, and mobile devices
+- **Interactive Charts**: Dynamic data visualization using Recharts
+- **Role-Based Access Control**: Manage user permissions and roles
+- **Real-Time Analytics**: Monitor user activities and system statistics
+- **Modern UI/UX**: Clean and intuitive interface with smooth animations
+- **Secure Authentication**: Protected routes and user authentication
+- **Dark Mode Support**: Toggle between light and dark themes
 
-### Key Features
+## 🛠️ Technologies Used
 
-#### 1. **User Management**
-   - View and manage all user accounts.
-   - Add, edit, or delete users.
-   - Assign roles to users and manage their status (e.g., Active/Inactive).
+- React.js
+- Material-UI Icons
+- Recharts
+- Tailwind CSS
+- React Router DOM
+- Context API
 
-#### 2. **Role Management**
-   - Define, edit, and delete roles.
-   - Configure roles with specific permissions (e.g., Read, Write, View) or custom attributes.
+## 📦 Installation
 
-#### 3. **Dynamic Permissions**
-   - Assign or update permissions for roles dynamically.
-   - Provide a clear and intuitive interface for managing permissions.
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/admin-dashboard.git
+```
 
-#### 4. **Additional Features**
-   - Analytics and statistics to monitor activity and usage.
-   - Filtering options and bulk deletion for enhanced data management.
-   - Profile management for user customization.
+2. Navigate to the project directory:
+```bash
+cd admin-dashboard
+```
 
----
+3. Install dependencies:
+```bash
+npm install
+```
 
-## Hosted Link
-   - Netlify: [https://rbacs-ui.netlify.app/](https://rbacs-ui.netlify.app/)
-   - Vercel: [https://role-based-access-control-sys-git-800fad-sagar-dewares-projects.vercel.app/](https://role-based-access-control-sys-git-800fad-sagar-dewares-projects.vercel.app/)
+4. Start the development server:
+```bash
+npm start
+```
 
-   **credentials**
-   - Email: admin
-   - password: admin
+## 🏗️ Project Structure
 
-## How to Contribute
+```
+src/
+├── components/
+│   └── Layout/
+│       ├── Layout.js
+│       └── Sidebar.js
+├── pages/
+│   ├── Dashboard/
+│   ├── Permissions/
+│   ├── Profile/
+│   └── Roles/
+├── services/
+│   ├── api.js
+│   ├── mockData.js
+│   └── websocket.js
+├── context/
+│   └── AuthContext.js
+├── App.js
+└── index.js
+```
 
-Feel free to fork this repository and submit pull requests. Suggestions and enhancements are always welcome!
+## 📊 Dashboard Features
+
+- **User Statistics**: Track total users and active sessions
+- **Role Management**: Monitor role distribution and permissions
+- **Permission Analytics**: Visualize permission usage across roles
+- **Interactive Charts**: 
+  - Bar charts for role permissions
+  - Pie charts for permission distribution
+  - User
